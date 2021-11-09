@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'landingpage',
+  selector: 'root-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

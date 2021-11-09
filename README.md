@@ -1,27 +1,156 @@
-# MandagApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+## Please learn TypeScript before learning Angular
 
-## Development server
+- [start with typescript](https://dev.azure.com/superusers-kursus/typescript)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+In Angular we use map and reduce to manage data:
+- [Map and Reduce](https://dev.azure.com/superusers-kursus/typescript/_git/learning-typescript?path=%2F03-javascript-features%2F15-combining-map-reduce-filter.ts)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Angular Basics
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[![Build Status](https://dev.azure.com/superusers-kursus/Angular-Basics/_apis/build/status/Jalalhejazi.angular-basics?branchName=master)](https://dev.azure.com/superusers-kursus/Angular-Basics/_build/latest?definitionId=142&branchName=master)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Angular first time
 
-## Further help
+```powershell
+# install angular cli package
+npm install --global @angular/cli
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng 
+
+ng new --help
+ng new demoApp  --defaults --minimal --dry-run 
+ng new demoApp  --defaults --minimal
+
+cd demoApp
+
+# edit with vscode
+code .
+
+npm install --silent
+
+# discovery command
+npm run 
+
+# start up command
+npm run start
+```
+## How to Clone first time
+
+```powershell
+git clone https://github.com/Jalalhejazi/angular-basics.git 
+cd angular-basics
+code .
+
+# Need to install requirements
+npm install --silent
+
+# startup and listen on port 1234
+npm run start
+```
+
+
+## How to work/edit/run online 
+
+- https://stackblitz.com/edit/angular-qna
+- https://stackblitz.com/edit/angular-registration-login-form
+- https://stackblitz.com/edit/reactive-programmering?file=index.ts
+- https://stackblitz.com/edit/angular-autocomplete-validation-form
+
+
+## cheatsheet docs
+
+- [cheatsheet](https://angular.io/guide/cheatsheet)
+
+## How to generate Modules
+
+- kursus module
+```powershell
+ng generate module kursus --module=app.module --route="kursus" --routingScope=Child 
+```
+
+## How to generate Component
+
+```powershell
+ng generate component --help
+ng g c weather -d
+
+# CREATE src/app/weather/weather.component.ts (268 bytes)
+# UPDATE src/app/app.module.ts (766 bytes)
+
+```
+
+## How to generate Pipes
+
+```powershell
+ng generate pipe --help
+
+```
+
+- https://underscorejs.org/
+- https://lodash.com/
+- https://date-fns.org/
+
+
+
+
+
+## How to generate Service
+
+```powershell
+ng generate service --help
+```
+
+
+## How to Build and Deploy
+
+Best Practice is to use [Dockerfile](dockerfile)
+
+```powershell
+# remove all running docker containers
+docker container rm $(docker container ls -aq) -f
+
+# build and run docker container
+# http://localhost:1111
+npm run docker-run
+
+# How to deploy to dockerHub or any dockerRegistry (on-premise)
+npm run deploy
+```
+
+
+## Tester & QA
+
+```powershell
+# show your tester how to call PowerShell functions and how to start the app
+
+function container-kill-all {
+   docker container rm $(docker container ls -aq) -f
+   docker image rm $(docker image ls -aq) -f  
+}
+function angular-basics-run{
+  container-kill-all
+  docker container run -d -p 2222:80/tcp jalalhejazi/angular-basics-2020:latest
+  chrome http://localhost:2222/
+}
+
+angular-basics-run
+```
+
+
+## Deploy using DevOps automation
+
+- When Deployment is automated, then 95% of your time goes to development and research 
+- No waste time on conflicts
+- No more "It works on my machine"
+
+<br>
+
+![](src/assets/ci-cd-workflow.png)
+
+<br>

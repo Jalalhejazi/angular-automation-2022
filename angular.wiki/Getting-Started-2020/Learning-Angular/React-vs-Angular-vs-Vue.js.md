@@ -1,0 +1,1 @@
+- [React vs Angular vs Vue.js — What to choose in 2020?](https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d)
