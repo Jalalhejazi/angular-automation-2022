@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DatoPipe } from './dato.pipe';
 import { BookingComponent } from './booking/booking.component';
 import { ProductService } from './product.service';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductService } from './product.service';
     ContactComponent,
     PageNotFoundComponent,
     DatoPipe,
-    BookingComponent
+    BookingComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
