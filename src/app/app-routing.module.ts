@@ -5,8 +5,12 @@ import { BookingComponent } from './booking/booking.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
+  {
+    path:'weather', component : WeatherComponent
+  },
   {
     path:'about', component:AboutComponent
   },
@@ -22,6 +26,8 @@ const routes: Routes = [
   
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: 'kursus', loadChildren: () => import('./kursus/kursus.module').then(m => m.KursusModule) },
+  
+  
   {path:"**", redirectTo:'about'}
 
 
