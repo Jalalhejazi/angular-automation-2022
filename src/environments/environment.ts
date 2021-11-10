@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   
   url : {
-    teknologi : 'http://service.superusers.dk/DataService/Test/egenskaber?format=json'
+    teknologi : 'https://service.superusers.dk/DataService/Test/egenskaber?format=json'
 
   }
 };
