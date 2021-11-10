@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  
+  url : {
+    teknologi : 'http://service.superusers.dk/DataService/Test/egenskaber?format=json'
+
+  }
 };
 
 /*

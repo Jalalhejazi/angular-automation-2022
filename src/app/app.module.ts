@@ -12,6 +12,7 @@ import { DatoPipe } from './dato.pipe';
 import { BookingComponent } from './booking/booking.component';
 import { ProductService } from './product.service';
 import { WeatherComponent } from './weather/weather.component';
+import { TeknologiComponent } from './teknologi/teknologi.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { WeatherComponent } from './weather/weather.component';
     PageNotFoundComponent,
     DatoPipe,
     BookingComponent,
-    WeatherComponent
+    WeatherComponent,
+    TeknologiComponent
   ],
   imports: [
     BrowserModule,

@@ -5,9 +5,13 @@ import { BookingComponent } from './booking/booking.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TeknologiComponent } from './teknologi/teknologi.component';
 import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
+  {
+    path:'teknologi' , component : TeknologiComponent
+  },
   {
     path:'weather', component : WeatherComponent
   },
