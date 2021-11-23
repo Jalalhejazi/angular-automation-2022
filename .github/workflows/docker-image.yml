@@ -9,8 +9,8 @@ on:
 jobs:
   test:
     env:
-      ID: ${{ dockerhub.DOCKERID }}
-      SECRET: ${{dockerhub.DOCKERPWD}}
+      ID: ${{ secret.DOCKERID }}
+      SECRET: ${{secret.DOCKERPWD}}
       IMAGE : "angular-basics-2021"
     name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
