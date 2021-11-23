@@ -6,8 +6,7 @@
 [![Build Status](https://dev.azure.com/superusers-kursus/Angular-Basics/_apis/build/status/Jalalhejazi.angular-basics?branchName=master)](https://dev.azure.com/superusers-kursus/Angular-Basics/_build/latest?definitionId=142&branchName=master)
 
 
-[![Docker Build CI](https://github.com/Jalalhejazi/angular-basics/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Jalalhejazi/angular-basics/actions/workflows/docker-image.yml)
-
+[![Docker Build CI](https://github.com/Jalalhejazi/angular-automation/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Jalalhejazi/angular-automation/actions/workflows/docker-image.yml)
 
 ## Angular first time (BigBang)
 
