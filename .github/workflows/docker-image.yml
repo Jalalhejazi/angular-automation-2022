@@ -8,6 +8,10 @@ on:
 
 jobs:
   test:
+    env:
+      ID: ${{ dockerhub.DOCKERID }}
+      SECRET: ${{dockerhub.DOCKERPWD}}
+      IMAGE : "angular-basics-2021"
     name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -27,4 +31,6 @@ jobs:
         npm install
         npm run build --if-present
         docker build . --file dockerfile --tag jalalhejazi/angular-basics-2021:latest
+        docker login -u ${{env.ID}} -p ${{env.SECRET}}
+        docker push jalalhejazi/angular-basics-2021
     
