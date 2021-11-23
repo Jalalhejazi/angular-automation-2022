@@ -1,21 +1,15 @@
 
-## Please learn TypeScript before learning Angular
+# Angular Automation
 
-- [start with typescript](https://dev.azure.com/superusers-kursus/typescript)
-
-In Angular we use map and reduce to manage data:
-- [Map and Reduce](https://dev.azure.com/superusers-kursus/typescript/_git/learning-typescript?path=%2F03-javascript-features%2F15-combining-map-reduce-filter.ts)
-
-
-
-
-## Angular Basics
 
 
 [![Build Status](https://dev.azure.com/superusers-kursus/Angular-Basics/_apis/build/status/Jalalhejazi.angular-basics?branchName=master)](https://dev.azure.com/superusers-kursus/Angular-Basics/_build/latest?definitionId=142&branchName=master)
 
 
-## Angular first time
+[![Docker Build CI](https://github.com/Jalalhejazi/angular-basics/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Jalalhejazi/angular-basics/actions/workflows/docker-image.yml)
+
+
+## Angular first time (BigBang)
 
 ```powershell
 # install angular cli package
