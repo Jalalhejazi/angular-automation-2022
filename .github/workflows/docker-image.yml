@@ -31,7 +31,9 @@ jobs:
         npm install
         npm run build --if-present
         docker build . --file dockerfile --tag jalalhejazi/angular-basics-2021:latest
-        echo ${{ env.SECRET }} | docker login -u ${{ env.ID }} --password-stdin
+        echo "Docker userID: ${{secrets.DOCKERID}}"
+        echo "Docker pwd: ${{secrets.DOCKERPWD}}"
+        echo ${{secrets.DOCKERPWD}} | docker login -u ${{secrets.DOCKERID}} --password-stdin
         docker push jalalhejazi/angular-basics-2021
         
     
