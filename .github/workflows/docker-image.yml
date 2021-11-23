@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag jalalhejazi/angular-basics-2021:latest
+      run: docker build . --file dockerfile --tag jalalhejazi/angular-basics-2021:latest
