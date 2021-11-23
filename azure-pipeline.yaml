@@ -2,7 +2,7 @@
 # If you want to hack me, you need to hack Azure first :-) 
 
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-latest'
 
 variables:
   imageName: 'angular-basics-2020'
