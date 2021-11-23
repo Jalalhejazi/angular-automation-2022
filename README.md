@@ -101,24 +101,7 @@ ng generate service --help
 ```
 
 
-## How to Build and Deploy
-
-Best Practice is to use [Dockerfile](dockerfile)
-
-```powershell
-# remove all running docker containers
-docker container rm $(docker container ls -aq) -f
-
-# build and run docker container
-# http://localhost:1111
-npm run docker-run
-
-# How to deploy to dockerHub or any dockerRegistry (on-premise)
-npm run deploy
-```
-
-
-## Tester & QA
+## Powershell Automation (Test)
 
 ```powershell
 # show your tester how to call PowerShell functions and how to start the app
@@ -129,7 +112,7 @@ function container-kill-all {
 }
 function angular-basics-run{
   container-kill-all
-  docker container run -d -p 2222:80/tcp jalalhejazi/angular-basics-2020:latest
+  docker container run -d -p 2222:80/tcp jalalhejazi/angular-basics-2021:latest
   chrome http://localhost:2222/
 }
 
@@ -137,10 +120,10 @@ angular-basics-run
 ```
 
 
-## Deploy using DevOps automation
+## DevOps automation
 
 - When Deployment is automated, then 95% of your time goes to development and research 
-- No waste time on conflicts
+- No waste time on Humans conflicts
 - No more "It works on my machine"
 
 <br>
