@@ -61,14 +61,14 @@ npm run start
 
 - [cheatsheet](https://angular.io/guide/cheatsheet)
 
-## How to generate Modules
+## Modules Automation
 
 - kursus module
 ```powershell
 ng generate module kursus --module=app.module --route="kursus" --routingScope=Child 
 ```
 
-## How to generate Component
+## Component Automation
 
 ```powershell
 ng generate component --help
@@ -79,7 +79,7 @@ ng g c weather -d
 
 ```
 
-## How to generate Pipes
+## Pipes Automation
 
 ```powershell
 ng generate pipe --help
@@ -91,10 +91,7 @@ ng generate pipe --help
 - https://date-fns.org/
 
 
-
-
-
-## How to generate Service
+## Service Automation
 
 ```powershell
 ng generate service --help
@@ -120,7 +117,7 @@ angular-basics-run
 ```
 
 
-## DevOps automation
+## DevOps Automation
 
 - When Deployment is automated, then 95% of your time goes to development and research 
 - No waste time on Humans conflicts
