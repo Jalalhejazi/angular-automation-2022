@@ -3,16 +3,9 @@
 
 pool:
   vmImage: 'Ubuntu-latest'
-
 variables:
   imageName: 'angular-basics-2020'
-
 steps:
-
-- task: WhiteSource Bolt@20
-  inputs:
-    cwd: ''
-    
 - script: |
     npm install --silent
     npm run build
@@ -21,5 +14,3 @@ steps:
     docker push $(dockerId)/$(imageName)
   env:
     pswd: $(dockerPassword)
-
-# webhooks to https://angular-basics-2020.azurewebsites.net
