@@ -11,7 +11,7 @@ jobs:
     env:
       ID: ${{secrets.DOCKERID}}
       SECRET: ${{secrets.DOCKERPASSWORD}}
-      IMAGE : "angular-basics-2021"
+      IMAGE : "jalalhejazi/angular-basics-2021"
     name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -36,7 +36,5 @@ jobs:
       run: |
         npm install --silent
         npm run build --if-present
-        docker build . --file dockerfile --tag "${{env.IMAGE}}:latest"
+        docker build . --file dockerfile --tag ${{env.IMAGE}}:latest
         docker push ${{env.IMAGE}}
-        
-    
