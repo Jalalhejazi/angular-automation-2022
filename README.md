@@ -33,7 +33,7 @@ npm run start
 
 ```powershell
 git clone <repo> 
-cd angular-basics
+cd angular-automation
 code .
 
 # Need to install requirements
@@ -102,13 +102,13 @@ function container-kill-all {
    docker container rm $(docker container ls -aq) -f
    docker image rm $(docker image ls -aq) -f  
 }
-function angular-basics-run{
+function angular-automation-run{
   container-kill-all
-  docker container run -d -p 2222:80/tcp jalalhejazi/angular-basics-2021:latest
+  docker container run -d -p 2222:80/tcp jalalhejazi/angular-automation-2022:latest
   chrome http://localhost:2222/
 }
 
-angular-basics-run
+angular-automation-run
 ```
 
 
