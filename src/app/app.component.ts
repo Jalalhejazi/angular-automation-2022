@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'root-app',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: []
 })
 export class AppComponent {
-  title = "superapp";
-  title2 = "My SuperApp for 2020";
+  title = 'kursusApp';
+  
+  constructor(){}
+  
 }
-
-
-

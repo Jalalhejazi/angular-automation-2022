@@ -1,28 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
-  template: `
-    <h1>
-      {{title | uppercase}}
-    </h1>
-
-    <p>
-    Hvordan du finder Karlebogaard og SuperUsers
-    Karlebovej 91, 3400 Hillerød
-    </p>
-
-    osv.
-  `,
-  styles: [
-  ]
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
 
-  title = "contact"
-  constructor() { }
+  data:any 
+  constructor(private route:ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.params.subscribe(p => this.data = p)
   }
 
 }

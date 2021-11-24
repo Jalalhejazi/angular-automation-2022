@@ -1,32 +1,27 @@
-import { Component} from '@angular/core';
-import { DataService } from '../data.service'
+import { Component, OnInit } from '@angular/core';
+import { format, addMonths } from 'date-fns';
+import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'navigation',
-  templateUrl:'./navigation.component.html'
+  selector: 'app-navigation',
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent {
-  
-  selected = false
-  data:any
+export class NavigationComponent implements OnInit {
 
-  constructor(private service : DataService) {
-    this.getMyData()
+  title = "SuperUsers Courses"
+
+  Month = ""
+  Month_plus_1 = ""
+  Month_plus_2 = ""
+  CurrentYear = ""
+  constructor(private service: ApiService) { }
+
+  ngOnInit() {
+    this.Month        = this.service.Month
+    this.Month_plus_1 = this.service.Month_plus_1
+    this.Month_plus_2 = this.service.Month_plus_2
+    this.CurrentYear  = this.service.CurrentYear
   }
-  
-  async getMyData(){
-    this.data = await this.service.getData()
-    
-    // this.data = await this.service.getCalculation_filter('John')
-    // this.data = await this.service.getCalculation_filter('findes ikke')
-    
-    // this.data =  await this.service.getCalculation_filter_by_id(1) 
-    // this.data =  await this.service.getCalculation_filter_by_id(2)
-    
-    // this.data = await this.service.getCalculation()
-    
-  }
-   
-  
+
 }
-

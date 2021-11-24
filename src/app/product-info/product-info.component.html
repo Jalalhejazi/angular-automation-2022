@@ -1,0 +1,16 @@
+<section class="page-section bg-dark text-white" *ngIf="kursus">
+    <div class="container text-left">
+        <h2 class="mb-4">  
+            <a class="btn btn-light btn-xl" href="https://www.superusers.dk/kursus/{{kursus.kursusNummer}}" target="_new">{{kursus.kursusNummer}}</a>  
+        </h2>
+        
+        <h1 class="mb-4" *ngIf="kursus.kursusTitel"> {{kursus.kursusTitel}}  </h1>
+
+        <p class="badge badge-info"  *ngIf="kursus.producent">   {{kursus.producent}}    </p>
+        <p class="badge badge-success"  *ngIf="kursus.kategori">    {{kursus.kategori}}     </p>
+        <p class="badge badge-primary"     *ngIf="kursus.role">        {{kursus.role}}         </p>    
+        <h3 *ngIf="kursus.kortBeskrivelse">
+            {{kursus.kortBeskrivelse}}
+        </h3>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+<div id="product" class="card" *ngFor="let k of data">
+    <div class="card-body">
+      <h5 class="card-title">{{k.kursus_titel}} </h5>
+      <p class="card-text"> {{k.kursus_dato | dateAsISO}}  </p>
+      <p class="card-text"> <span class="badge badge-success">{{k.kursus_sted}} - {{k.kursus_lokale}} </span>  </p>
+      
+      <p class="card-text">    
+        <a class="btn btn-info "  routerLink="/kursus/{{k.kursus_nummer}}"> About this training {{k.kursus_nummer}}  </a>
+      </p>
+
+      <p class="card-text text-primary " >    
+        <button class="btn btn-danger" (click)="moreInfo(k)"> Members  </button>
+      </p>
+      
+    </div>
+</div>

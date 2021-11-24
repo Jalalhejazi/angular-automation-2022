@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
-  url : {
-    teknologi : 'https://service.superusers.dk/DataService/Test/egenskaber?format=json'
-
+  api: {
+    courses : 'https://superusers-kursus-angular-2020.azurewebsites.net/api/v1/kursus',
+    courseInfo  : 'https://service.superusers.dk/DataService/Kursus/Oversigt'
   }
 };

@@ -1,37 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { AboutComponent } from './about/about.component';
+import { HeadComponent } from './head/head.component';
+import { CurrentComponent } from './current/current.component';
+import { ServiceComponent } from './service/service.component';
 import { ContactComponent } from './contact/contact.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { DatoPipe } from './dato.pipe';
-import { BookingComponent } from './booking/booking.component';
-import { ProductService } from './product.service';
-import { WeatherComponent } from './weather/weather.component';
-import { TeknologiComponent } from './teknologi/teknologi.component';
+import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DownloadComponent } from './download/download.component';
+import { YearComponent } from './year/year.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { DateAsISOPipe } from './pipes/date-as-iso.pipe';
+import { ProductComponent } from './product/product.component';
+import { ProductInfoComponent } from './product-info/product-info.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    AboutComponent,
+    HeadComponent,
+    ServiceComponent,
     ContactComponent,
-    PageNotFoundComponent,
-    DatoPipe,
-    BookingComponent,
-    WeatherComponent,
-    TeknologiComponent
+    FooterComponent,
+    DownloadComponent,
+    CurrentComponent,
+    YearComponent,
+    DateAsISOPipe,
+    ProductComponent,
+    ProductInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    AgGridModule.withComponents([])
   ],
-  providers: [ProductService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
