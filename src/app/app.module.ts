@@ -10,8 +10,6 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DownloadComponent } from './download/download.component';
-import { YearComponent } from './year/year.component';
-import { AgGridModule } from 'ag-grid-angular';
 import { DateAsISOPipe } from './pipes/date-as-iso.pipe';
 import { ProductComponent } from './product/product.component';
 import { ProductInfoComponent } from './product-info/product-info.component'
@@ -26,15 +24,13 @@ import { ProductInfoComponent } from './product-info/product-info.component'
     FooterComponent,
     DownloadComponent,
     CurrentComponent,
-    YearComponent,
     DateAsISOPipe,
     ProductComponent,
     ProductInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AgGridModule.withComponents([])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

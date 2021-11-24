@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~ag-grid-community/dist/styles/ag-grid.css";
-@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
-
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
 
 @import url("assets/vendor/fontawesome-free/css/all.min.css");
 @import url("assets/vendor/magnific-popup/magnific-popup.css"); 
 @import url("assets/css/creative.min.css");
+
+
