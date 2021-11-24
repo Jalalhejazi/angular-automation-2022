@@ -11,7 +11,7 @@ jobs:
     env:
       ID: ${{secrets.DOCKERID}}
       SECRET: ${{secrets.DOCKERPASSWORD}}
-      IMAGE : "jalalhejazi/angular-basics-2021"
+      IMAGE : "jalalhejazi/angular-automation-2022"
     name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
