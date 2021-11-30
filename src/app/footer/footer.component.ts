@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  title = "Angular WebApp"
+  title = "WebApp"
   constructor() { }
 
   ngOnInit() {
