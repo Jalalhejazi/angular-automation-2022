@@ -9,8 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class NavigationComponent implements OnInit {
 
-  title = "POC "
-
+  title = ""
   Month = ""
   Month_plus_1 = ""
   Month_plus_2 = ""
@@ -22,6 +21,8 @@ export class NavigationComponent implements OnInit {
     this.Month_plus_1 = this.service.Month_plus_1
     this.Month_plus_2 = this.service.Month_plus_2
     this.CurrentYear  = this.service.CurrentYear
+
+    this.title        = `POC ${this.CurrentYear}/${this.Month}`
   }
 
 }
