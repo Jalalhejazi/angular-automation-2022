@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class NavigationComponent implements OnInit {
 
-  title = "SuperUsers Courses"
+  title = "POC "
 
   Month = ""
   Month_plus_1 = ""
