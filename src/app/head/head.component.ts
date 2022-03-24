@@ -21,8 +21,8 @@ export class HeadComponent implements OnInit {
     this.Month        = this.service.Month
     this.Month_plus_1 = this.service.Month_plus_1
     this.CurrentYear  = this.service.CurrentYear
-    this.title        = `Courses about modern Web Technology in ${this.CurrentYear}`
-    this.description  = `working with Angular ${VERSION.full} and bootstrap together to build better webapps `
+    this.title        = `Web Technology ${this.CurrentYear}`
+    this.description  = `Angular ${VERSION.full} `
   }
 
 }
