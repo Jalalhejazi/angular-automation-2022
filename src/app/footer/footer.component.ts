@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  title = "WebApp"
+  title = "WebApp 2022-03-28"
   constructor() { }
 
   ngOnInit() {
