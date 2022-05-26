@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:1.22.0-alpine
 LABEL maintainer Jalal Hejazi <jalal.hejazi@gmail.com>
 
 COPY dist/AngularBasics /usr/share/nginx/html
